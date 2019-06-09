@@ -5,9 +5,9 @@ services:
     container_name: local-kms-dev
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     volumes:
     - .:/go/src/github.com/nsmithuk/local-kms
     - ./init:/init
     ports:
-    - 8080:8080
+    - 8688:8688
